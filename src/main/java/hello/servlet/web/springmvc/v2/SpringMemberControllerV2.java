@@ -34,8 +34,7 @@ public class SpringMemberControllerV2 {
         return mv;
     }
 
-
-    @RequestMapping("")
+    @RequestMapping("/members")
     public ModelAndView members() {
         List<Member> members = memberRepository.findAll();
         ModelAndView mv = new ModelAndView("members");
